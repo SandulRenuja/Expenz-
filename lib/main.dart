@@ -1,4 +1,4 @@
-import 'package:expenz/screens/onbording_screen.dart';
+
 import 'package:expenz/services/user_services.dart';
 import 'package:expenz/widgets/wrapper.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future:UserServices.checkUername(),
-      builder: (context, snapshot) {
+      future:UserService.checkUsername(),
+          builder: (context, snapshot) {
         //if snap shot is waiting
        if(snapshot.connectionState == ConnectionState.waiting){
         return const CircularProgressIndicator();
