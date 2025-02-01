@@ -15,17 +15,17 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
 
-//Current page Index
+// Current page Index
 int _currentIndexPage = 0;
-// Screen List
+//Screen List
   final List<Widget> pages = [
+    AddnewScreen(),
     HomeScreen(),
     TransactionScreen(),
-    AddnewScreen(),
     BudgetScreen(),
     ProfileScreen(),
-  ];
-
+  ];   
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,3 +85,4 @@ int _currentIndexPage = 0;
     );
   }
 }
+
